@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/gallery_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/edtName"
+            android:hint="Name"
+            android:textSize="24sp"
+            android:inputType="text"
+            app:met_baseColor="@color/colorPrimary"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true"/>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.dd.processbutton.iml.ActionProcessButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="SELECT"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/btnSelect"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"
+                app:pb_colorNormal="@color/colorPrimary">
+
+            </com.dd.processbutton.iml.ActionProcessButton>
+
+            <com.dd.processbutton.iml.ActionProcessButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="UPLOAD"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/btnUpload"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"
+                app:pb_colorNormal="@color/colorPrimary">
+
+            </com.dd.processbutton.iml.ActionProcessButton>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
